@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="<?php $this->options->themeUrl('/assets/css/holakit.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('/assets/css/style.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('/assets/css/font-awesome/css/font-awesome.min.css'); ?>">
-    <link rel="stylesheet" href="https://npmcdn.com/data-tip@0.0.52/dist/data-tip.css">
+    <link rel="stylesheet" href="https://unpkg.com/data-tip@0.0.52/dist/data-tip.css">
     <script src="https://twemoji.maxcdn.com/2/twemoji.min.js?11.0"></script>
     <style>
         .markdown-body {

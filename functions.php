@@ -27,6 +27,14 @@ function themeConfig($form) {
     $form->addInput($search_box_text);
      */
 
+    //favicon
+    $favicon = new Typecho_Widget_Helper_Form_Element_Text('favicon', NULL, NULL, _t('favicon图标地址'));
+    $form->addInput($favicon);
+
+    //apple touch icon
+    $iosicon = new Typecho_Widget_Helper_Form_Element_Text('iosicon', NULL, NULL, _t('apple touch icon图标地址'));
+    $form->addInput($iosicon);
+
     //文章字数统计
     $post_word = new Typecho_Widget_Helper_Form_Element_Radio('post_word', 
         array('1' => _t('启用'),
@@ -89,6 +97,21 @@ function themeConfig($form) {
 
     $form->addInput($time_show->multiMode());
 
+    //评论设置
+    $comments_setting = new Typecho_Widget_Helper_Form_Element_Radio('comments_setting', 
+        array('1' => _t('原生评论'),
+            '2' => _t('第三方评论')
+        ),
+
+        '1', _t('评论设置'), _t('第三方评论请在下方第三方评论代码中填写代码'));
+    
+    $form->addInput($comments_setting);
+
+    //第三方评论代码
+    $third_party_comments = new Typecho_Widget_Helper_Form_Element_Textarea('third_party_comments', NULL, NULL, _t('第三方评论代码'));
+    $form->addInput($third_party_comments);
+
+    //侧边栏设置
     $sidebar_show = new Typecho_Widget_Helper_Form_Element_Checkbox('sidebar_show',
         array(
             'hot_posts' => _t('热门文章(5篇)'),
@@ -102,14 +125,6 @@ function themeConfig($form) {
         array('hot_posts', 'new_comments', 'random_posts', 'category_list', 'tag_list'), _t('侧栏设置开关'));
 
     $form->addInput($sidebar_show->multiMode());
-
-    //favicon
-    $favicon = new Typecho_Widget_Helper_Form_Element_Text('favicon', NULL, NULL, _t('favicon图标地址'));
-    $form->addInput($favicon);
-
-    //apple touch icon
-    $iosicon = new Typecho_Widget_Helper_Form_Element_Text('iosicon', NULL, NULL, _t('apple touch icon图标地址'));
-    $form->addInput($iosicon);
 
     //标签数量限制
     $tag_limit = new Typecho_Widget_Helper_Form_Element_Text('tag_limit', NULL, NULL, _t('标签数量限制'), _t('请填写阿拉伯数字，默认为无穷大'));
