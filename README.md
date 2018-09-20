@@ -25,7 +25,7 @@ Arcadia是一款基于holakit.css制作的typecho主题，没有使用任何其�
 
 ## 使用方法
 
-前往release页面下载压缩包，安装至/you-blog-site/usr/themes目录下，QQ群：807852679。
+[说明文档](https://arcadia-docs.4leaf.top)
 
 ## 兼容性
 
