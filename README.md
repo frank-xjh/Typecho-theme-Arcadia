@@ -1,4 +1,4 @@
-# Arcadia v1.0.0正式版发布
+# Arcadia v1.1.0正式版发布
 
 > 精于心，简于形
 
@@ -16,9 +16,9 @@ Arcadia是一款基于holakit.css制作的typecho主题，没有使用任何其�
 2. 丰富的自定义，强大的后台，随意添加各种功能。
 3. 响应式设计，iphone、android、PC全部适配。
 4. 无前端框架，极速响应，页面请求资源更少，更快。
-5. 采用[GitHub Flavored Markdown](https://github.github.com/gfm/)渲染Markdown，友好界面，美观而又不失内涵。
+5. 采用[GitHub Flavored Markdown](https://github.github.com/gfm/)渲染Markdown，独特样式，友好界面，美观而又不失内涵。
 6. 内置代码高亮，支持多达151种语言。
-7. 原生评论+第三方评论多评论系统，畅所欲言。
+7. 原生评论+第三方评论多评论系统，单页面禁用，畅所欲言。
 8. 自定义天气显示，简单实用。
 9. 字数统计+阅读时间，让你的文章量化。
 7. 更多亮点，等着你去发现💎~
