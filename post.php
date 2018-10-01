@@ -33,7 +33,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 			</div>
       <?php thePrev($this); ?><br /><?php theNext($this); ?>
       <br /><br />
-      <?php include('comments.php'); ?>
+      <?php if ($this->fields->comments_setting) {include('comments.php');} ?>
 		</article>
 	</section>
 	<?php

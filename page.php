@@ -31,7 +31,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
               <br />分享到：<a href="https://twitter.com/intent/tweet?url=<?php echo urlencode($this->permalink()); ?>&text=<?php echo urlencode($this->title()); ?>" target="_blank" title="<?php $this->title() ?>" rel="nofollow" style="color:#fff;background-color:#1b95e0;border-radius:1.7rem;padding:.37rem">Twitter</a>&nbsp;&nbsp;<a href="http://service.weibo.com/share/share.php?url=<?php echo urlencode($this->permalink()); ?>&amp;title=<?php echo urlencode($this->title()); ?>" target="_blank" title="<?php $this->title() ?>" rel="nofollow"  style="color:#fff;background-color:#db4437;border-radius:1.7rem;padding:.37rem">Weibo</a>&nbsp;&nbsp;<a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode($this->permalink()); ?>" target="_blank" title="<?php $this->title() ?>" rel="nofollow" style="color:#fff;background-color:#4267b2;border-radius:1.7rem;padding:.37rem">Facebook</a>
 			</div>
       <br /><br />
-      <?php include('comments.php'); ?>
+      <?php if ($this->fields->comments_setting) {include('comments.php');} ?>
 		</article>
 	</section>
 	<?php

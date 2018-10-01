@@ -4,7 +4,7 @@
  *
  * @package Arcadia Theme
  * @author Frank
- * @version 0.1-beta
+ * @version 1.1.0
  * @link https://arcadia.4leaf.top/
  */
 

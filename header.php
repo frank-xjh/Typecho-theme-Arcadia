@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="<?php $this->options->themeUrl('/assets/css/style.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('/assets/css/font-awesome/css/font-awesome.min.css'); ?>">
     <link rel="stylesheet" href="https://unpkg.com/data-tip@0.0.52/dist/data-tip.css">
-    <script src="https://twemoji.maxcdn.com/2/twemoji.min.js?11.0"></script>
+    <script src="https://cdn.bootcss.com/twemoji/2.7.0/twemoji.min.js"></script>
     <style>
         .markdown-body {
             box-sizing: border-box;
@@ -39,8 +39,7 @@
         }
     </style>
     <?php $this->options->header_code(); ?>
-    <?php if ($this->is('post')) { ?>
-    <?php } if ($this->is('post') && !empty($this->options->post_show) && in_array('code_light', $this->options->post_show)) { ?><link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('/assets/css/Prism/prism.css'); ?>" /><script src="<?php $this->options->themeUrl('/assets/js/Prism/prism.js'); ?>" type="text/javascript"></script><?php } ?>
+    <?php if (!$this->is('index') && !empty($this->options->post_show) && in_array('code_light', $this->options->post_show)) { ?><link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('/assets/css/Prism/prism.css'); ?>" /><script src="<?php $this->options->themeUrl('/assets/js/Prism/prism.js'); ?>" type="text/javascript"></script><?php } ?>
     <?php $this->header(); ?>
 </head>
 <body class="hola-body-typography hola-grey-bg">

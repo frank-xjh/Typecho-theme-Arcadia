@@ -157,7 +157,16 @@ function themeConfig($form) {
     //自定义尾部右侧内容
     $footer_right = new Typecho_Widget_Helper_Form_Element_Textarea('footer_right', NULL, NULL, _t('自定义尾部右侧内容'), _t('可填写html,js,php,也可以填写备案号'));
     $form->addInput($footer_right);
-	
+}
+
+function themeFields($layout) {
+    $comments_setting = new Typecho_Widget_Helper_Form_Element_Radio('comments_setting', 
+        array('1' => _t('启用'),
+            '0' => _t('禁止'),
+        ),
+
+        '1',  _t('本页评论设置'), _t('禁止则会禁用评论'));
+    $layout->addItem($comments_setting);
 }
 
 //文章字数统计
