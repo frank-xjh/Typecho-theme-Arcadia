@@ -12,8 +12,8 @@
     <?php if ($this->options->iosicon) { ?><link rel="apple-touch-icon" href="<?php $this->options->iosicon(); ?>"><?php } ?>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css">
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('/assets/css/holakit.css'); ?>">
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('/assets/css/style.css'); ?>">
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('/assets/css/holakit.css?v=1'); ?>">
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('/assets/css/style.min.css?v=2'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('/assets/css/font-awesome/css/font-awesome.min.css'); ?>">
     <link rel="stylesheet" href="https://unpkg.com/data-tip@0.0.52/dist/data-tip.css">
     <script src="https://cdn.bootcss.com/twemoji/2.7.0/twemoji.min.js"></script>
@@ -39,7 +39,7 @@
         }
     </style>
     <?php $this->options->header_code(); ?>
-    <?php if (!$this->is('index') && !empty($this->options->post_show) && in_array('code_light', $this->options->post_show)) { ?><link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('/assets/css/Prism/prism.css'); ?>" /><script src="<?php $this->options->themeUrl('/assets/js/Prism/prism.js'); ?>" type="text/javascript"></script><?php } ?>
+    <?php if (!$this->is('index') && !empty($this->options->post_show) && in_array('code_light', $this->options->post_show)) { ?><link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('/assets/css/Prism/prism.css?v=1'); ?>" /><script src="<?php $this->options->themeUrl('/assets/js/Prism/prism.js?v=1'); ?>" type="text/javascript"></script><?php } ?>
     <?php $this->header(); ?>
 </head>
 <body class="hola-body-typography hola-grey-bg">
